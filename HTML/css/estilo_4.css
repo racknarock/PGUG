@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    min-height: 100vh;
+    background-color: #272041;
+    height:100vh;
+    margin-top: 40px;}
+
+header{
+    color: white;
+        padding: 10px;
+        background: linear-gradient( to right, rgb(88, 11, 133),aqua  );
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border-color: bisque;
+    }
+
+    h1 a {
+        color: white;
+        text-decoration: none;
+    }
+    .curso{
+        text-align: right;
+        color: black;
+     
+     }
+     main{
+        color: white;
+        margin-top: 10%;
+     }

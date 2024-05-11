@@ -1,0 +1,440 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: linear-gradient( to right, rgb(13, 4, 63),rgb(24, 0, 0)  );
+    height: 100vh;
+    margin-top: 40px;
+    font-family: Verdana, 'Lucida Grande';
+    text-align: flex;
+}
+
+header {
+    color: white; 
+    padding: 10px;
+    background: linear-gradient( to right, rgb(13, 4, 63),rgb(24, 0, 0)  );
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-color: bisque;
+    border-radius: auto;
+    z-index: 1001;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(245, 0, 0, 0.993);
+  }
+  
+  .box:hover:before {
+    border-color: #357e91f3;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #357e91f3;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+  a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+
+
+
+.main-container {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    transform: none;
+    cursor: default;
+}
+
+.curso {
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    text-decoration: none;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 90px;
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    background-size: cover;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+    transition: .5s linear;
+
+}
+
+  
+ul:hover {
+    box-shadow: 0 5px 15px rgba(245, 0, 0, 0.993);
+  }
+  
+  ul:hover:before {
+    border-color: #0bb9eef3;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  ul:hover:after {
+    border-color: #0bb9eef3;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+
+@keyframes a {
+    0% {
+      transform: scale(0.7, 1.3);
+    }
+  
+    25% {
+      transform: scale(1.5, 0.7);
+    }
+     
+   }
+
+li a {
+    color: rgb(128, 115, 115);
+    text-decoration: none;
+    transition: .5s;
+    padding: 20px;
+    margin: 50px;
+    display: flex;
+    background-size: cover;
+}
+
+li a:hover{
+    transform: scale(1.2);
+    animation: a 0.5s 1 linear;
+}
+
+
+#Menu ul,
+#Menu li,
+#Menu a {
+    margin: 0;
+    padding: 0;
+}
+
+#Menu ul {
+    list-style: none;
+}
+
+#Menu a {
+    text-decoration: none;
+}
+
+#Menu {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el menú */
+    height: auto;
+    box-shadow: 0px 2px 3px rgba(19, 2, 37, 0);
+    width: 80%; /* Ancho ajustado */
+    margin: 150px auto 0; /* Ajusta la distancia desde la parte superior y centra horizontalmente */
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra del menú */
+    top: 0; /* Fija el menú en la parte superior */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+#Menu > ul {
+    display: flex; /* Cambia a una disposición horizontal */
+    justify-content: center; /* Centra horizontalmente los elementos del menú */
+    padding: 0;
+}
+
+#Menu > ul > li {
+    display: inline-block; /* Cambiado de 'float: left;' a 'display: inline-block;' */
+    margin-left: 15px;
+    position: relative;
+}
+
+#Menu > ul > li > a {
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+    padding: 11px 20px;
+    transition: color .15s;
+}
+
+#Menu > ul > li > a:hover {
+ color: rgb(8, 145, 155);}
+
+#Menu > ul > li > ul {
+    opacity: 0;
+    visibility: hidden;
+    padding: 16px 0 20px 0;
+    background-color: #fafafa;
+    text-align: left;
+    position: absolute;
+    left: 0; /* Alinear a la izquierda del elemento padre */
+    top: 0; /* Ajustado para que los submenús comiencen desde arriba */
+    margin-left: 0; /* Eliminado para mantener el desplazamiento horizontal */
+    width: 180px;
+    transition: all .3s .1s;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#Menu > ul > li:hover > ul {
+    opacity: 1;
+    top: 100%; /* Ajustado para que los submenús aparezcan hacia abajo */
+    visibility: visible;
+}
+
+#Menu > ul > li > ul:before {
+    content: '';
+    display: block;
+    border-color: transparent transparent #fafafa transparent;
+    border-style: solid;
+    border-width: 10px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+#Menu ul ul > li {
+    position: relative;
+}
+
+#Menu ul ul a {
+    color: #323232;
+    font-size: 13px;
+    background-color: #fafafa;
+    padding: 5px 8px 7px 16px;
+    display: block;
+    transition: background-color 0.1s;
+}
+
+#Menu > ul > li > ul > li > ul:before {
+    content: '';
+    display: block;
+    border-color: transparent #333 transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    position: absolute;
+    top: 23%;
+    left: -20px;
+}
+
+#Menu ul ul ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0; /* Ajustado para que los submenús comiencen desde arriba */
+    left: 100%; /* Alinear a la derecha del elemento padre */
+    padding: 16px 0 20px 0;
+    background-color: #fafafa;
+    text-align: left;
+    width: 180px;
+    transition: all .3s;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#Menu ul ul > li:hover > ul {
+    opacity: 1;
+    left: 100%; /* Alinear a la derecha del elemento padre */
+    visibility: visible;
+}
+
+#Menu ul ul a:hover {
+    background-color: #0087db;
+    color: #f0f0f0;
+}
+
+nav ul {
+    list-style: none;
+    background-size: cover;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    background-size: cover;
+}
+
+nav ul li a {
+    display: Flex;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-size: cover;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    background-size: cover;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    padding: 10px 15px;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0; background-size: cover;
+}
+
+.main-container {
+    margin-top: 80px;
+}
+
+
+.inicio {
+    text-align: left;
+ }
+
+ #inicio{
+    padding: 30px;
+ }
+ 
+ #antecedentes{
+    background: linear-gradient( to right, rgb(13, 4, 63),rgb(24, 0, 0)  );
+    padding: 30px;
+ } 
+
+ #creacion{
+    background: linear-gradient( to right, rgb(13, 4, 63),rgb(24, 0, 0)  );
+    padding: 30px;
+ }
+
+ #actualidad{
+    padding: 30px;
+ }
+
+#HistoriaPGUG{
+    background: linear-gradient( to right, rgb(13, 4, 63),rgb(24, 0, 0)  );
+    padding: 30px;
+}
+
+#historia{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-size-adjust: 90%;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 1.6;
+    transition:.5s;
+    border-radius: 150px;
+}
+
+#historia:hover{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(134, 1, 243, 0.993);
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-size-adjust: 90%;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 1.6;
+    transition:.5s;
+}
+ 
+
+
+ 

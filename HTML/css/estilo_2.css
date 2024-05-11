@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    min-height: 100vh;
+    background-color: #272041;
+    height:100vh;
+    margin-top: 40px
+}
+
+    Form{
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        transition: .5s;
+        text-align: center;
+        color: white;
+        font-style:oblique;
+        margin-top: 50px;
+    }
+    
+    .form{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: #272041;
+        color: white;
+        border-color: black;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        justify-content: center;
+        height: 50px;
+    }
+
+    form:hover{
+        background: linear-gradient(to right, rgb(88, 11, 133),aqua );
+        transition: .5s;
+       padding: 10px;
+       border-radius: 30px;
+       transform:scale(1.1);
+    }
+
+    .contenido{
+        text-align: center;
+        padding: 50px;
+        color: white;
+        font-style: oblique;
+        border-radius: 30px ;
+        transition: .5s;
+        margin-top: 10px;
+    }
+
+   
+
+    .contenido2{
+        text-align: center;
+        padding: 50px;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 30px;
+    }
+
+   
+
+    header{
+        color: white;
+        padding: 10px;
+        background: linear-gradient( to right, rgb(88, 11, 133),aqua  );
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+     
+    nav a{
+        color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    li a{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    h1 a{
+        text-decoration: none;
+        color: white;
+    }
